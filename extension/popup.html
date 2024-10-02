@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Translator</title>
+  <style>
+    /* General body styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 30px; /* Add padding to the body */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px; /* Adjust height to fit padding */
+        width:100vh
+    }
+
+    /* Title styles */
+    h1 {
+        font-size: 2rem;
+        color: #2c3e50;
+        margin-bottom: 20px;
+        margin-top: 20px; /* Add margin to the top */
+    }
+
+    /* Label styles */
+    label {
+        font-size: 1.2rem;
+        color: #34495e;
+        margin-bottom: 10px;
+    }
+
+    /* Select box styles */
+    select {
+        width: 100%;
+        max-width: 400px;  /* Increased width */
+        padding: 15px;      /* Increased padding */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        font-size: 1.2rem;  /* Increased font size */
+        transition: border-color 0.3s;
+        margin-bottom: 20px; /* Add margin to separate from the button */
+    }
+
+    /* Select box hover effect */
+    select:hover {
+        border-color: #2980b9;
+    }
+
+    /* Button styles */
+    button {
+        width: 100%;
+        max-width: 400px;  /* Increased width */
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 15px;      /* Increased padding */
+        border-radius: 5px;
+        font-size: 1.2rem;  /* Increased font size */
+        cursor: pointer;
+        transition: background-color 0.3s;
+       margin-bottom: 10px;
+    }
+
+    /* Button hover effect */
+    button:hover {
+        background-color: #2980b9;
+    }
+
+    /* Responsive design for smaller screens */
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        select, button {
+            font-size: 1rem;
+            max-width: 100%;   /* Full width on smaller screens */
+        }
+    }
+  </style>
+</head>
+<body>
+  <h1>WhatsApp Translator Settings</h1>
+  <label for="languageSelect">Select Target Language:</label>
+  <select id="languageSelect">
+    <option value="en">English</option>
+    <option value="es">Spanish</option>
+    <option value="fr">French</option>
+  </select>
+  <button id="saveBtn">Save</button>
+
+  <!-- Link to external script -->
+  <script src="popup.js"></script>
+</body>
+</html>
